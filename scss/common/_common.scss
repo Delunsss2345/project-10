@@ -1,0 +1,62 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+@each $breakpoints, $value in $grid-breakpoints {
+  $max-width: map-get($container-max-widths, $breakpoints);
+  @media (min-width: $value) {
+    .container {
+      max-width: $max-width;
+    }
+  }
+}
+* {
+  font-family: "Sora", sans-serif;
+}
+html {
+  font-family: "Sora", sans-serif;
+  font-size: 10px;
+}
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+.master {
+  background: #131517;
+}
+li a.nav-item-light {
+  position: relative;
+  color: var(--text-color-white, #f9f9f9);
+  /* Paragraph/H6 heading 16px */
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.nav-item-light::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 20px;
+  bottom: 0;
+  background-color: rgb(28, 221, 157);
+}
