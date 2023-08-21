@@ -1,0 +1,86 @@
+.hero {
+  padding-top: 60px;
+}
+.hero__main {
+  display: flex;
+  justify-content: space-between;
+  .hero__main--bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc((121 / 1320) * 100%);
+    height: 315px;
+  }
+  .hero__main--center {
+    width: calc((783 / 1320) * 100%);
+    margin-top: 62px;
+    .hero__main--title-center {
+      margin-bottom: 34px;
+      color: var(--text-color-white, #f9f9f9);
+      text-align: center;
+      /* Heading/H1 Heading 60px */
+      font-size: 6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 70px; /* 116.667% */
+      .hero__main--strong-title {
+        background: var(
+          --primary-color-leniar-color,
+          linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+        border: rgb(229, 229, 229) 1px dashed;
+      }
+    }
+    .hero__main--title-decs {
+      width: 447px;
+      margin-bottom: 44px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--text-color-gray-1, #858b93);
+      text-align: center;
+      /* Paragraph/H5 heading 18px */
+      font-family: Sora;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+    }
+    .hero__main--action {
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+      .btn-active-default {
+        width: 199px;
+        height: 54px;
+        border: none;
+        border-radius: 8px;
+        background: var(--text-color-gray-2, #282c30);
+        box-shadow: 1px 8px 45px 0px rgba(0, 0, 0, 0.25);
+        span {
+          color: var(--text-color-white, #f9f9f9);
+          text-align: center;
+          /* Paragraph/H5 heading 18px */
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; /* 162.5% */
+        }
+        &.btn-lidergarient {
+          border-radius: 8px;
+          background: var(
+            --primary-color-leniar-color,
+            linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%)
+          );
+        }
+      }
+    }
+  }
+}
