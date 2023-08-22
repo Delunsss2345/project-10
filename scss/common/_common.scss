@@ -91,7 +91,7 @@ li a.nav-item-light {
   border-radius: 8px;
   background: var(--text-color-gray-2, #282c30);
   box-shadow: 1px 8px 45px 0px rgba(0, 0, 0, 0.25);
-  transition: opacity 0.5s , transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
   &:hover {
     opacity: 0.8;
     transform: scale(1.02);
@@ -112,4 +112,17 @@ li a.nav-item-light {
       linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%)
     );
   }
+}
+.strong-hight-light {
+  background: var(
+    --primary-color-leniar-color,
+    linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
