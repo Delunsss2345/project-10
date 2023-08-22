@@ -1,8 +1,8 @@
 .dashboard {
   padding-top: 51px;
+  padding-bottom: 286px;
 }
 .dashboard__main {
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: calc((848 / 1320) * 100%);
@@ -14,7 +14,6 @@
   background: #1f2326;
   .dashboard__main--extra {
     position: absolute;
-    z-index: 2;
     top: 190px;
     left: -80px;
     width: 216px;
@@ -42,6 +41,14 @@
       }
     }
   }
+  
+}
+.dashboard__main {
+  position: relative;
+  z-index: 1;
+}
+.dashboard__main--extra-img {
+ display: none;
 }
 .dashboard__main--extra-list {
   .dashboard__main--extra-item {
@@ -52,7 +59,7 @@
     background: #14181b;
     margin-bottom: 10px;
     padding: 12px 0px 15px 0px;
-   
+
     .dashboard__main--extra-item-top {
       display: flex;
       align-items: center;
@@ -64,6 +71,12 @@
         margin-right: 10px;
         &.organe {
           background: var(--primary-color-dark-orange, #ff7667);
+        }
+        &.purple {
+          background: var(--primary-color-blue, #ae8ff9);
+        }
+        &.green {
+          background: var(--primary-color-green, #0cce84);
         }
       }
       .dashboard__main--extra-item-name {
@@ -106,6 +119,44 @@
           }
         }
       }
+      &.purple {
+        .dashboard__main--extra--item-light {
+          position: relative;
+          margin-right: 8px;
+          margin-top: 16px;
+          width: 139px;
+          height: 3px;
+          background: #ccc;
+          &::after {
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color-blue, #ae8ff9);
+          }
+        }
+      }
+      &.green {
+        .dashboard__main--extra--item-light {
+          position: relative;
+          margin-right: 8px;
+          margin-top: 16px;
+          width: 139px;
+          height: 3px;
+          background: #ccc;
+          &::after {
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color-green, #0cce84);
+          }
+        }
+      }
 
       .dashboard__main--extra--item-light-span {
         display: inline-block;
@@ -116,6 +167,7 @@
         font-weight: 400;
         line-height: normal;
       }
+      
     }
   }
 }
