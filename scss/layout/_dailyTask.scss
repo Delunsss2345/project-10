@@ -1,5 +1,6 @@
 .dailyTask {
   padding-top: 140px;
+  padding-bottom: 140px;
 }
 /*Daily Task Main*/
 .dailyTask__main {
@@ -272,5 +273,45 @@
     height: 32px;
     background-color: #363a3e;
     border-radius: 50%;
+  }
+}
+.dailyTask__main-circle-extra-DTask {
+  position: absolute;
+  z-index: 2;
+  bottom: 100px;
+  left: -80px;
+  display: flex;
+  align-items: center;
+  padding: 11px 18px 10px 18px;
+  border-radius: 5px;
+  background: #27292c;
+  .dailyTask__main-circle-extra-btn {
+    margin-right: 15px;
+  }
+  .dailyTask__main-circle-extra-span {
+    margin-right: 43px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(110deg, #c4f566 0%, #ff6e6e 92.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .dailyTask__main--circle-extra-img-group {
+    display: flex;
+    .dailyTask__main--circle-extra-img- {
+      &1 img {
+        width: 32px;
+        height: 32px;
+      }
+      &2 img {
+        margin-left: -9px;
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
