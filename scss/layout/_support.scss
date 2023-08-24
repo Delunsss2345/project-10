@@ -1,0 +1,166 @@
+.support {
+  padding-top: 140px;
+}
+.main__support--intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 67px;
+  .main__support--title {
+    width: 493px;
+    color: var(--text-color-white, #f9f9f9);
+    /* Heading/H2 heading 40px */
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px; /* 125% */
+  }
+  .main__support--action {
+    width: 218px;
+    height: 68px;
+    border-radius: 12px;
+    border: 2px solid #36383e;
+    background: #131517;
+    cursor: pointer;
+    outline: 2px solid transparent;
+    transition: outline 0.3s;
+    &:hover {
+      outline-color: #fff;
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px; /* 100% */
+      background: var(
+        --primary-color-leniar-color,
+        linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+.main__support--list {
+  display: flex;
+  gap: 110px;
+}
+.main__support--list-left {
+  display: flex;
+  flex-direction: column;
+  width: calc(493 / 1320 * 100%);
+  gap: 16px;
+}
+.main__support--item-left {
+  width: 493px;
+  height: 158px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid var(--text-color-gray-2, #282c30);
+  outline: 2px solid transparent;
+  transition: outline 0.3s, background-color 0.3s;
+  cursor: pointer;
+  &:hover {
+    outline-color: #fff;
+    background: var(--text-color-gray-2, #282c30);
+  }
+  .main__support--item-left-cover {
+    padding: 29px 65px 37px 40px;
+    .main__support--item-left-title {
+      &-1 {
+        position: relative;
+        margin-bottom: 9px;
+        color: var(--text-color-white, #f9f9f9);
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &::before {
+          position: absolute;
+          top: 20px;
+          left: 218px;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: var(--primary-color-dark-yellow, #ef8f00);
+        }
+      }
+      &-2 {
+        position: relative;
+        margin-bottom: 9px;
+        color: var(--text-color-white, #f9f9f9);
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        &::before {
+          position: absolute;
+          top: 20px;
+          left: 200px;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: var(--primary-color-green, #0cce84);
+        }
+      }
+      &-3 {
+        position: relative;
+        margin-bottom: 9px;
+        color: var(--text-color-white, #f9f9f9);
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        &::before {
+          position: absolute;
+          top: 20px;
+          left: 145px;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: var(--primary-color-dark-orange, #ff7667);
+        }
+      }
+    }
+    .main__support--item-left-desc {
+      color: var(--text-color-gray-1, #858b93);
+
+      /* Paragraph/H6 heading 16px */
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
+}
+.main__support--list-right {
+  .main__support--item-right {
+    width: 348px;
+    height: 263px;
+    border-radius: 31px;
+    outline: 2px solid #fff;
+    .main__support--item-img- {
+      &1,
+      &2,
+      &3 {
+        width: 348px;
+        height: 263px;
+        border-radius: 31px;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 89px 27px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+.main__support--item-img-block-2 {
+  transform: translate(115px, -75px);
+}
+.main__support--item-img-block-3 {
+  transform: translate(35px, -157px);
+}
