@@ -20,12 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <div class="master" style="height: 9999px">
+    <div class="master">
       <!-- Header -->
-      <header class="header">
+      <header data-aos="fade-down" data-aos-duration="1150" class="header">
         <div class="container">
           <section class="header__main">
             <!-- Logo Header -->
@@ -66,7 +68,11 @@
       <section class="hero">
         <div class="container">
           <section class="hero__main">
-            <div class="hero__main--left hero__main--bubble">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1150"
+              class="hero__main--left hero__main--bubble"
+            >
               <figure class="hero__main--bubble-big">
                 <img
                   class="hero__main--bubble-big-img"
@@ -96,10 +102,15 @@
                 />
               </figure>
             </div>
-            <section class="hero__main--center">
+            <section
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="hero__main--center"
+            >
               <h1 class="hero__main--title-center">
                 Make
-                <strong class="hero__main--strong-title"
+                <strong
+                  class="strong-hight-light hero__main--title-center hero__main--strong-title mobile"
                   >Management
                   <!-- Extra Hero strong -->
 
@@ -147,7 +158,11 @@
                 </button>
               </div>
             </section>
-            <div class="hero__main--right hero__main--bubble">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1150"
+              class="hero__main--right hero__main--bubble"
+            >
               <figure class="hero__main--bubble-big">
                 <img
                   class="hero__main--bubble-big-img"
@@ -183,7 +198,11 @@
       <!-- Dashboard -->
       <section class="dashboard">
         <div class="container">
-          <section class="dashboard__main">
+          <section
+            data-aos="fade-up"
+            data-aos-duration="1150"
+            class="dashboard__main"
+          >
             <!-- Dashboard Extra Img -->
             <div class="dashboard__main--extra-img">
               <!-- Ellipse-dash-green -->
@@ -371,7 +390,11 @@
               </div>
             </section>
             <!-- Dashboard Extra Block -->
-            <div class="dashboard__main--extra">
+            <div
+              data-aos="fade-up-right"
+              data-aos-duration="1150"
+              class="dashboard__main--extra"
+            >
               <div class="dashboard__main--extra-content">
                 <section class="dashboard__main--extra-info">
                   <span class="dashboard__main--extra-title">
@@ -455,8 +478,20 @@
           </section>
         </div>
       </section>
+      <!-- DashBoard Mobile -->
+      <section class="dashboard-mobile">
+        <div class="container">
+          <figure class="main__dashboard-mobile">
+            <img
+              src="./asset/img/responsive/group-img.png"
+              alt="group-img"
+              class="main__dashboard-mobile-img"
+            />
+          </figure>
+        </div>
+      </section>
       <!-- Contact -->
-      <section class="contact">
+      <section data-aos="fade-up" data-aos-duration="1150" class="contact">
         <div class="container">
           <section class="contact__main">
             <!-- Contact list -->
@@ -542,7 +577,11 @@
         <div class="container">
           <section class="dailyTask__main">
             <!-- Daily Task Left -->
-            <section class="dailyTask__main--left">
+            <section
+              data-aos="fade-right"
+              data-aos-duration="1150"
+              class="dailyTask__main--left"
+            >
               <div class="dailyTask__main--info">
                 <h2 class="dailyTask__main--title">
                   Okay,<strong class="strong-hight-light">Let’s</strong> see
@@ -591,7 +630,11 @@
               </div>
             </section>
             <!-- Daily Task Right -->
-            <section class="dailyTask__main--right">
+            <section
+              data-aos="fade-left"
+              data-aos-duration="1150"
+              class="dailyTask__main--right"
+            >
               <!-- Circle XBig -->
               <div class="dailyTask__main--circle-big">
                 <!-- Circle default -->
@@ -599,7 +642,11 @@
                   <div class="dailyTask__main--circle"></div>
                 </div>
                 <!-- Circle Block Extra -->
-                <div class="dailyTask__main--circle-extra-support">
+                <div
+                  data-aos="fade-down-right"
+                  data-aos-duration="1550"
+                  class="dailyTask__main--circle-extra-support"
+                >
                   <span class="dailyTask__main--circle-extra-span"
                     >Online Support</span
                   >
@@ -619,9 +666,34 @@
                       />
                     </svg>
                   </figure>
+                  <!-- Action Mobile -->
+                  <figure class="dailyTask_main--circle-extra-btn-mobile">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                    >
+                      <circle
+                        cx="8.99659"
+                        cy="8.5409"
+                        r="8.44191"
+                        fill="#363A3E"
+                      />
+                      <path
+                        d="M11.635 8.54154L7.67762 10.8258L7.67808 6.25649L11.635 8.54154Z"
+                        fill="#F08D08"
+                      />
+                    </svg>
+                  </figure>
                 </div>
                 <!-- Extra Exercitation -->
-                <div class="dailyTask__main--circle-extra-exercitation">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1550"
+                  class="dailyTask__main--circle-extra-exercitation"
+                >
                   <span class="dailyTask__main--circle-extra-exercitation-span">
                     Exercitation
                   </span>
@@ -642,9 +714,19 @@
                       />
                     </svg>
                   </figure>
+                  <figure class="dailyTask__main--circle-extra-exercitation-img-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <circle cx="9.22657" cy="8.79237" r="8.44191" fill="#363A3E"/>
+                      <path d="M12.9201 5.099L10.282 12.4857L8.96297 9.05614L5.53345 7.73709L12.9201 5.099Z" fill="#FD7566"/>
+                    </svg>
+                  </figure>
                 </div>
                 <!-- Extra Design -->
-                <div class="dailyTask__main--circle-extra-design">
+                <div
+                  data-aos="fade-up-left"
+                  data-aos-duration="1550"
+                  class="dailyTask__main--circle-extra-design"
+                >
                   <span class="dailyTask__main--circle-extra-design-span">
                     Design
                   </span>
@@ -653,13 +735,21 @@
                     class="dailyTask__main--circle-extra-design-action-icon"
                   >
                     <img
-                      src="./asset/img/daily/action-icon-3.svg"
+                      src="./asset/img/daily/action-icon-3-mobile.svg"
                       alt="action-icon-3"
                     />
                   </figure>
+                  <!-- Action Icon Mobile -->
+                  <figure class="dailyTask__main--circle-extra-design-action-icon-mobile">
+                    <img src="./asset/img/daily/action-icon-3.svg" alt="action-icon-3">
+                  </figure>
                 </div>
                 <!-- Extra D'task -->
-                <div class="dailyTask__main-circle-extra-DTask">
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="1550"
+                  class="dailyTask__main-circle-extra-DTask"
+                >
                   <figure class="dailyTask__main-circle-extra-btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -673,6 +763,13 @@
                         d="M21.0005 16.001L13.5001 20.3304L13.5009 11.6701L21.0005 16.001Z"
                         fill="#F08D08"
                       />
+                    </svg>
+                  </figure>
+                  <!-- Active Mobile -->
+                  <figure class="dailyTask__main-circle-extra-btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <circle cx="8.63844" cy="9.02833" r="8.44191" fill="#363A3E"/>
+                      <path d="M11.2768 9.02872L7.31947 11.313L7.31992 6.74367L11.2768 9.02872Z" fill="#F08D08"/>
                     </svg>
                   </figure>
                   <span class="dailyTask__main-circle-extra-span">D’ task</span>
@@ -731,6 +828,58 @@
                   />
                 </figure>
               </div>
+              <!-- Daily Task Extra Mobile  -->
+              <div class="dailyTask__main--right-extra-mobile
+              ">
+                <figure class="dailyTask__main--right-img-block-mobile-1
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-1"
+                    class="dailyTask__main--right-img-1"
+                  />
+                </figure>
+                <figure class="dailyTask__main--right-img-block-mobile-2
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-2"
+                    class="dailyTask__main--right-img-mobile-2"
+                  />
+                </figure>
+                <figure class="dailyTask__main--right-img-block-mobile-3
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-3"
+                    class="dailyTask__main--right-img-mobile-3"
+                  />
+                </figure>
+                <figure class="dailyTask__main--right-img-block-mobile-4
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-4"
+                    class="dailyTask__main--right-img-mobile-4"
+                  />
+                </figure>
+                <figure class="dailyTask__main--right-img-block-mobile-5
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-5"
+                    class="dailyTask__main--right-img-mobile-5"
+                  />
+                </figure>
+                <figure class="dailyTask__main--right-img-block-mobile-6
+                ">
+                  <img
+                    src="./asset/img/daily/Rectangle-60-moblie.svg"
+                    alt="dailyTask__main--right-img-6"
+                    class="dailyTask__main--right-img-mobile-6"
+                  />
+                </figure>
+              </div>
             </section>
           </section>
         </div>
@@ -740,7 +889,11 @@
         <div class="container">
           <section class="main__features">
             <!-- Features Left -->
-            <div class="main__features--left">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1150"
+              class="main__features--left"
+            >
               <div class="main__features--left-circle"></div>
               <div class="main__features--line-group">
                 <figure class="main__features-line-item">
@@ -764,7 +917,11 @@
                     9 am
                   </figcaption>
                   <!-- Extra Feature Line Img -->
-                  <div class="main__features--left-line-extra-1">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1550"
+                    class="main__features--left-line-extra-1"
+                  >
                     <figure class="main_features--left-line-extra-img-1">
                       <img
                         src="./asset/img/img-features/avatar-features.png"
@@ -797,7 +954,11 @@
                     10 am
                   </figcaption>
                   <!-- Extra Feature Line Img -->
-                  <div class="main__features--left-line-extra-2">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1550"
+                    class="main__features--left-line-extra-2"
+                  >
                     <span class="main__features--left-line-span-2"
                       >Hi-Fidelity Lending Page</span
                     >
@@ -824,7 +985,11 @@
                     11 am
                   </figcaption>
                   <!-- Extra Feature Line Img -->
-                  <div class="main__features--left-line-extra-mess">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1550"
+                    class="main__features--left-line-extra-mess"
+                  >
                     <span class="main__features--left-line-extra-mess-span"
                       >14%</span
                     >
@@ -854,7 +1019,11 @@
                     12 am
                   </figcaption>
                   <!-- Extra Feature Line Img -->
-                  <div class="main__features--left-line-extra-3">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1550"
+                    class="main__features--left-line-extra-3"
+                  >
                     <span class="main__features--left-line-span-3"
                       >Create lo-Fidelity Wireframe</span
                     >
@@ -862,7 +1031,11 @@
                 </figure>
               </div>
             </div>
-            <section class="main__features--right">
+            <section
+              data-aos="fade-left"
+              data-aos-duration="1150"
+              class="main__features--right"
+            >
               <h2 class="main__features--right-title">
                 Features to help <br />
                 your <strong class="strong-hight-light"> team succeed </strong>
@@ -919,17 +1092,29 @@
       <section class="product">
         <div class="container">
           <section class="product__main">
-            <h2 class="product__main--title">
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="product__main--title"
+            >
               Integrated
               <strong class="strong-hight-light"> designed</strong> for product
               teams
             </h2>
-            <p class="product__main-desc">
+            <p
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="product__main-desc"
+            >
               Exepteur sint occaecat cupidatat non proident, sunt in culpa que
               official deserunt mollit laborum - semper quis lectus nulla.
             </p>
             <!-- Product List -->
-            <div class="main__product--list">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="main__product--list"
+            >
               <article class="main__product--item">
                 <figure class="man__product--icon">
                   <img
@@ -979,7 +1164,11 @@
             <!-- Product DeskTop -->
             <div class="main__product--desktop-all">
               <!-- Product Idea -->
-              <div class="main__product--desktop-idea">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1150"
+                class="main__product--desktop-idea"
+              >
                 <!-- Three Dot -->
                 <figure class="main__product--three-dot">
                   <svg
@@ -1130,7 +1319,11 @@
                 </div>
               </div>
               <!-- Product Group -->
-              <div class="main__product--desktop-daily-group">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1150"
+                class="main__product--desktop-daily-group"
+              >
                 <!-- Product Daily Block Top-->
                 <div class="main__product--daily-block-top">
                   <figure class="main__product--daily-block-img">
@@ -1255,7 +1448,11 @@
                 </div>
               </div>
               <!-- Product Team -->
-              <div class="main__product--desktop-daily-group-team">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1150"
+                class="main__product--desktop-daily-group-team"
+              >
                 <figure
                   class="main__product--desktop-daily-group-team-three-dot"
                 >
@@ -1354,7 +1551,11 @@
         <div class="container">
           <section class="main__support">
             <!-- intro -->
-            <div class="main__support--intro">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="main__support--intro"
+            >
               <h2 class="main__support--title">
                 From the
                 <strong class="strong-hight-light">big picture</strong> to every
@@ -1368,7 +1569,11 @@
             <!-- List -->
             <div class="main__support--list">
               <!-- Left -->
-              <div class="main__support--list-left">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1150"
+                class="main__support--list-left"
+              >
                 <article class="main__support--item-left">
                   <div class="main__support--item-left-cover">
                     <h3 class="main__support--item-left-title-1">
@@ -1402,7 +1607,11 @@
                 </article>
               </div>
               <!-- Right -->
-              <div class="main__support--list-right">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1150"
+                class="main__support--list-right"
+              >
                 <figure
                   class="main__support--item-right main__support--item-img-block-1"
                 >
@@ -1436,17 +1645,25 @@
         </div>
       </section>
       <!-- Light -->
-      <div class="light"></div>
+      <div data-aos="fade-up" data-aos-duration="1150" class="light"></div>
       <!-- Refreshing -->
       <section class="refreshing">
         <div class="container">
           <section class="main__refreshing">
-            <h2 class="main__refreshing--title">
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1150"
+              class="main__refreshing--title"
+            >
               <strong class="strong-hight-light">Refreshing</strong> news for
               developers and desigers
             </h2>
             <!-- Main refreshing list -->
-            <div class="main__refreshing--list">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1150"
+              class="main__refreshing--list"
+            >
               <article class="main__refreshing--item">
                 <div class="main__refreshing--item-cover">
                   <!-- Img -->
@@ -1554,7 +1771,11 @@
               </article>
             </div>
             <!-- Main refreshing feedback -->
-            <div class="main__refreshing--feedback--list">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1150"
+              class="main__refreshing--feedback--list"
+            >
               <article class="main__refreshing--feedback-item">
                 <div class="main__refreshing--feedback-cover">
                   <figure class="main__refreshing--feedback-block-img">
@@ -1841,7 +2062,11 @@
         <div class="container">
           <section class="main__footer">
             <!-- Footer Top -->
-            <section class="main__footer--top">
+            <section
+              data-aos="fade-up"
+              data-aos-duration="1150"
+              class="main__footer--top"
+            >
               <figure class="main__footer--logo-footer">
                 <img src="./asset/img/logo.svg" alt="logo" />
               </figure>
@@ -1860,7 +2085,11 @@
             <!-- Footer Bottom -->
             <section class="main__footer--bottom">
               <!-- Footer Bottom Left -->
-              <div class="main__footer--bottom-left">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1150"
+                class="main__footer--bottom-left"
+              >
                 <h3 class="main__footer--title">Subscribe to our newsletter</h3>
                 <form class="main__footer--form">
                   <div class="main__footer--input-group">
@@ -1870,6 +2099,7 @@
                       class="main__footer--input"
                       placeholder="Your Email Adreess"
                     />
+
                     <label for="mail" class="main__footer--label-img-block">
                       <figure class="main__footer--label-img">
                         <svg
@@ -1960,7 +2190,11 @@
                 </div>
               </div>
               <!-- Footer Bottom Left -->
-              <div class="main__footer--bottom-right">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1150"
+                class="main__footer--bottom-right"
+              >
                 <div class="main__footer--bottom-right-list">
                   <article class="main__footer--bottom-right-item-block">
                     <span class="main__footer--bottom-right-item">
@@ -2016,5 +2250,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
